@@ -1,0 +1,32 @@
+test_homepage:
+    path:     /
+    defaults: { _controller: TestBundle:Default:index }
+
+test_car_add:
+    path:     /car/add
+    defaults: { _controller: TestBundle:Car:add }
+
+
+
+test_car_edit:
+    path:     /car/edit/{id}
+    defaults: { _controller: TestBundle:Car:edit }
+
+
+test_car_show:
+    path:     /car
+    defaults: { _controller: TestBundle:Car:show }
+
+
+test_car_show_id:
+    path:     /car/{id}
+    defaults: { _controller: TestBundle:Car:showbyId }
+
+
+test_car_delete:
+    path:     /deletecar/{qdt}
+    defaults: { _controller: TestBundle:Car:delete }
+
+ajax_search:
+    path:     /search
+    defaults: { _controller: TestBundle:Car:search }
